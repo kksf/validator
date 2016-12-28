@@ -2,7 +2,7 @@
 
 namespace pillax;
 
-class dataValidator {
+class validator {
 
     public static function validate($value, $rule) {
         if( ! method_exists('self', $rule)) {

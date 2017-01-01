@@ -7,7 +7,7 @@ class validator {
 	// test
     public static function validate($value, $rule) {
         if( ! method_exists('self', $rule)) {
-            throw new \Exception('Invalid validation rule');
+            throw new \Exception('Invalid validation rule!');
         }
 
         return self::$rule($value);
@@ -23,5 +23,9 @@ class validator {
 
     public static function isString($value) {
         return is_string($value);
+    }
+
+    public static function isTest($value) {
+        return true;
     }
 }

@@ -4,6 +4,7 @@ namespace pillax;
 
 class validator {
 
+	// test
     public static function validate($value, $rule) {
         if( ! method_exists('self', $rule)) {
             throw new \Exception('Invalid validation rule');
